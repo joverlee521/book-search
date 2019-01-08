@@ -42,7 +42,7 @@ export default class Saved extends Component {
                     {this.state.books.length ? 
                     <List>
                         {this.state.books.map(book => {
-                            const {_id, title, authors, description, image, link} = book;
+                            const {title, authors, description, image, link} = book;
                             return(<ListItem>
                                 <button className="btn btn-danger m-2 text-white float-right"
                                 onClick={() => this.deleteBook(book)}
